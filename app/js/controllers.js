@@ -27,13 +27,23 @@ angular.module('myApp.controllers', [])
 
    }])
 
-
   .controller('TradeCtrl', ['$scope', 'syncData', function($scope, syncData) {
 
    }])
 
-
   .controller('FieldCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+   }])
+
+  .controller('ConsumerDetailCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+   }])
+
+  .controller('TradeDetailCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+   }])
+
+  .controller('FieldDetailCtrl', ['$scope', 'syncData', function($scope, syncData) {
 
    }])
 

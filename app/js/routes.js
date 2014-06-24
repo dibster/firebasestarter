@@ -30,6 +30,21 @@ angular.module('myApp.routes', ['ngRoute'])
           controller: 'FieldCtrl'
       });
 
+      $routeProvider.when('/consumer/detail', {
+          templateUrl: 'partials/consumerDetail.html',
+          controller: 'ConsumerDetailCtrl'
+      });
+
+      $routeProvider.when('/trade/detail', {
+          templateUrl: 'partials/tradeDetail.html',
+          controller: 'TradeDetailCtrl'
+      });
+
+      $routeProvider.when('/field/detail', {
+          templateUrl: 'partials/fieldDetail.html',
+          controller: 'FieldDetailCtrl'
+      });
+
       $routeProvider.when('/account', {
          authRequired: true, // must authenticate before viewing this page
          templateUrl: 'partials/account.html',
