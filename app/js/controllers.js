@@ -23,6 +23,20 @@ angular.module('myApp.controllers', [])
       };
    }])
 
+  .controller('ConsumerCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+   }])
+
+
+  .controller('TradeCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+   }])
+
+
+  .controller('FieldCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+   }])
+
    .controller('LoginCtrl', ['$scope', 'loginService', '$location', function($scope, loginService, $location) {
       $scope.email = null;
       $scope.pass = null;

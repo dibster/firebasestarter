@@ -1,10 +1,23 @@
-<h2>Home</h2>
+<nav class="navbar navbar-inverse" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Diageo</a>
+    </div>
 
-<p class="status good" ng-show-auth="login">Hello! You are logged in.</p>
-<p class="status" ng-show-auth="logout">Not logged in</p>
-<p class="status error" ng-show-auth="error">{{auth.error}}</p>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#/consumer">Consumer</a></li>
+            <li><a href="#/trade">Trade</a></li>
+            <li><a href="#/field">Field</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
 
-<input ng-model="syncedValue" type="text" /> <b>{{syncedValue}}</b>
-
-<p>Open <a href="{{FBURL}}/syncedValue">Forge</a> or a <a target="_blank" href="index.html">new window</a> to see this input update in real time:</p>
-
+<img src="img/jw.jpg" class="img-responsive" alt="Responsive image">

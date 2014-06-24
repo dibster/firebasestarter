@@ -15,6 +15,21 @@ angular.module('myApp.routes', ['ngRoute'])
          controller: 'ChatCtrl'
       });
 
+      $routeProvider.when('/consumer', {
+          templateUrl: 'partials/consumer.html',
+          controller: 'ConsumerCtrl'
+      });
+
+      $routeProvider.when('/trade', {
+          templateUrl: 'partials/trade.html',
+          controller: 'TradeCtrl'
+      });
+
+      $routeProvider.when('/field', {
+          templateUrl: 'partials/field.html',
+          controller: 'FieldCtrl'
+      });
+
       $routeProvider.when('/account', {
          authRequired: true, // must authenticate before viewing this page
          templateUrl: 'partials/account.html',
