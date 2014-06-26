@@ -37,7 +37,7 @@ angular.module('myApp.controllers', [])
               }
             });
             scan.identify();
-            setTimeout(function(){$location.path('/consumer/detail');$scope.$apply()}, 1000);
+            setTimeout(function(){$location.path('/consumer/detail');$scope.$apply()}, 3000);
 
 //            $location.path('/consumer/detail');
 
@@ -61,7 +61,7 @@ angular.module('myApp.controllers', [])
               }
             });
             scan.identify();
-            setTimeout(function(){$location.path('/field/detail');$scope.$apply()}, 1000);
+            setTimeout(function(){$location.path('/field/detail');$scope.$apply()}, 3000);
 
 //            $location.path('/consumer/detail');
 
@@ -85,7 +85,7 @@ angular.module('myApp.controllers', [])
               }
             });
             scan.identify();
-            setTimeout(function(){$location.path('/trade/detail');$scope.$apply()}, 1000);
+            setTimeout(function(){$location.path('/trade/detail');$scope.$apply()}, 3000);
 
 //            $location.path('/consumer/detail');
 
