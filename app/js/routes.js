@@ -30,6 +30,11 @@ angular.module('myApp.routes', ['ngRoute'])
           controller: 'FieldCtrl'
       });
 
+      $routeProvider.when('/dashboard', {
+          templateUrl: 'partials/dashboard.html',
+          controller: 'DashboardCtrl'
+      });
+
       $routeProvider.when('/consumer/detail', {
           templateUrl: 'partials/consumerDetail.html',
           controller: 'ConsumerDetailCtrl'

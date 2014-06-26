@@ -23,17 +23,83 @@ angular.module('myApp.controllers', [])
       };
    }])
 
-  .controller('ConsumerCtrl', ['$scope', 'syncData', function($scope, syncData) {
+  .controller('ConsumerCtrl', ['$scope', '$location', 'syncData', function($scope, $location, syncData) {
+        $scope.scanBottle = function() {
+
+            console.log('scan bottle');
+            var scan = new ScanThng({scanType: 'QRCODE', redirect: false, successCb: function( data ){
+                console.log('callback Done : ' + data);
+                // want to reroute to new page when successful
+                // route to new page
+              }, errorCb: function( data ){
+                console.log('In Error : ' + data);
+                // route to new page in Error
+              }
+            });
+            scan.identify();
+            setTimeout(function(){$location.path('/consumer/detail');$scope.$apply()}, 1000);
+
+//            $location.path('/consumer/detail');
+
+
+        }
 
    }])
 
-  .controller('TradeCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+  .controller('FieldCtrl', ['$scope', '$location', 'syncData', function($scope, $location, syncData) {
+        $scope.scanBottle = function() {
+
+            console.log('scan bottle');
+            var scan = new ScanThng({scanType: 'QRCODE', redirect: false, successCb: function( data ){
+                console.log('callback Done : ' + data);
+                // want to reroute to new page when successful
+                // route to new page
+              }, errorCb: function( data ){
+                console.log('In Error : ' + data);
+                // route to new page in Error
+              }
+            });
+            scan.identify();
+            setTimeout(function(){$location.path('/field/detail');$scope.$apply()}, 1000);
+
+//            $location.path('/consumer/detail');
+
+
+        }
 
    }])
 
-  .controller('FieldCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+  .controller('TradeCtrl', ['$scope', '$location', 'syncData', function($scope, $location, syncData) {
+        $scope.scanBottle = function() {
+
+            console.log('scan bottle');
+            var scan = new ScanThng({scanType: 'QRCODE', redirect: false, successCb: function( data ){
+                console.log('callback Done : ' + data);
+                // want to reroute to new page when successful
+                // route to new page
+              }, errorCb: function( data ){
+                console.log('In Error : ' + data);
+                // route to new page in Error
+              }
+            });
+            scan.identify();
+            setTimeout(function(){$location.path('/trade/detail');$scope.$apply()}, 1000);
+
+//            $location.path('/consumer/detail');
+
+
+        }
 
    }])
+
+
+
+  .controller('DashboardCtrl', ['$scope', 'syncData', function($scope, syncData) {
+
+   }])
+
 
   .controller('ConsumerDetailCtrl', ['$scope', 'syncData', function($scope, syncData) {
 
